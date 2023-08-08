@@ -18,6 +18,7 @@
 <body>
     <header>
         <h3 class="company-name-title">LuminaForge</h3>
+        <!-- Navigation bar -->
         <nav class="navbar">
             <ul class="navbar-left">
                 <li><a href="#">HOME</a></li>
@@ -28,13 +29,15 @@
                 <li><a href="#">CONTACTS</a></li>
             </ul>
             <div class="navbar-right">
+                <!-- Dropdown list -->
                 <div class="dropdown">
-                    <button class="dropdown-btn"><img src="images/language_switcher_arrow.png" alt="Dropdown Icon"></button>
-                    <div class="dropdown-content">
-                        <a href="#" class="language-option">English</a>
-                        <a href="#" class="language-option">German</a>
-                        <a href="#" class="language-option">French</a>
-                        <a href="#" class="language-option">English</a>
+                    <input class="text-box" type="text" placeholder="Select on" readonly>
+                    <button onclick="clickDropdownButton()" class="dropbtn"><img src="images/language_switcher_arrow.png" alt="Dropdown Arrow"></button>
+                    <div id="dropdown" class="dropdown-content">
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="de">German</a>
+                        <a href="#" data-lang="fr">French</a>
+                        <a href="#" data-lang="it">Italian</a>
                     </div>
                 </div>
             </div>
@@ -95,10 +98,12 @@
         </div>
     </main>
     
+    <!-- footer section -->
     <footer>
        <p>Copyright © 2023. LuminaForge All rights reserved</p>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
