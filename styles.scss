@@ -4,7 +4,7 @@ $primary_color_1: #000000;
 $primary_color_2: #ffffff;
 $primary_color_3: #fc7500;
 $navbar_color_1: #7d7b7b;
-$navbar_color_2: #a0a5de;
+$navbar_color_2: #6b929c;
 
 /* Default body margin */
 body {
@@ -159,12 +159,17 @@ body {
     margin: 0 auto;
     max-width: 880px;
     text-align: center;
+    padding-bottom: 80px;
 }
 
 .row {
     padding: 120px 60px 120px 60px;
 }
 
+.container-m{
+    width: 100%;
+    background-color: #fc7500;
+}
 .grid-img {
     height: 550px;
     width : 450px;
