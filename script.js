@@ -2,7 +2,8 @@
  * Toggle the visibility of the language selection dropdown.
  */
 function clickDropdownButton() {
-  document.getElementById("dropdown").classList.toggle("show");
+  const dropdown = document.getElementById("dropdown");
+  dropdown.classList.toggle("show");
 
   /**
    * Attach click event listeners to language links in the dropdown.
@@ -29,6 +30,20 @@ function updateInputField(language) {
   const inputField = document.querySelector(".text-box");
   const languageName = getLanguageName(language);
   inputField.value = languageName;
+
+  const welcomeElement = document.getElementById("welcome");
+  const welcomeTo = {
+    en: "WELCOME TO",
+    de: "WILLKOMMEN ZU",
+    fr: "BIENVENUE À",
+    it: "BENVENUTO A",
+  };
+
+  if (welcomeTo.hasOwnProperty(language)) {
+    welcomeElement.innerHTML = welcomeTo[language];
+  } else {
+    welcomeElement.innerHTML = "WELCOME TO"; // Default value
+  }
 }
 
 /**
