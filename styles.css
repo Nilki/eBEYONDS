@@ -140,6 +140,7 @@ body {
   margin-top: 180px;
   text-align: center;
   font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
 }
 
 .our-teams-title {
@@ -152,7 +153,7 @@ body {
   margin: 0 auto;
   max-width: 880px;
   text-align: center;
-  padding-bottom: 80px;
+  padding: 80px 0px 30px 0px;
 }
 
 .row {
@@ -175,6 +176,7 @@ body {
   margin: 0 auto;
   max-width: 450px;
   text-align: center;
+  padding: 30px 0px 50px 0px;
 }
 
 footer {
